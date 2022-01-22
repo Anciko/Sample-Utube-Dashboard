@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-y: hidden;
+}
+/* Reuseable components */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.fs {
+  font-size: 12px;
+  opacity: 0.5;
+}
+.column {
+  width: 270px;
+  margin: 10px;
+}
+.cg {
+  color: green;
+}
+.divider {
+  height: 1px;
+  background: #ddd;
+  margin: 15px 0;
+}
+.overflowEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*  */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin-bottom: 5px;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.46);
+}
+.searchinput {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 7px 10px
+}
+.sicn{
+  color: #888;
+  margin-right: 10px;
+}
+.search{
+  width: 500px;
+  /* padding: 5px 0px  5px 0px; */
+  border: none;
+  outline: none;
+  /* text-align: center; */
+}
+.barsBtn{
+  cursor: pointer;
+}
+.fav{
+  color: #d40b0b;
+}
+.navtabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navprofile{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.navicn {
+  margin-left: 20px;
+  color: #ff0000;
+  font-size: 25px;
+}
+.navtxt {
+  color: #ff0000;
+  margin-left: 4px;
+  font-weight: 600;
+  font-size: larger;
+}
+.nbdr{
+  display: flex;
+  align-items: center;
+  margin: 0 !important;
+  padding: 4px 15px;
+  border: 1px solid #ddd;
+}
+.ntbl{
+  margin: 0px 20px;
+}
+.ntbt{
+  font-size: 12px;
+  margin-left: 3px;
+  text-transform: uppercase;
+}
+
+/* Parent container */
+.parentContainer {
+  display: flex;
+  overflow: hidden;
+}
+
+/*------------ sidebar start ---------*/
+.sidebar {
+  width: 17%;
+  height: 100%;
+}
+.mychannel {
+  margin: 15px auto;
+  text-align: center;
+}
+.utubeprofile {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.ctitle {
+  font-size: 15px;
+  margin-top: 7px;
+}
+.cname {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #ff0000;
+  opacity: 0.9;
+}
+.sidenavlists {
+  list-style: none;
+}
+.listlinks {
+  display: block;
+  padding: 10px 0 10px 25px;
+  text-decoration: none;
+  color: #555;
+}
+.listlinks:hover {
+  background-color: #ebe4e4;
+  border-left: 4px solid #cc0000;
+  color: #cc0000;
+}
+.si {
+  font-size: 18px;
+  margin-right: 17px;
+}
+.fs {
+  font-size: 14px;
+}
+
+/* sidebar end */
+/*------------ main start  --------- */
+.dashBoardTitleSection {
+  width: 858px;
+}
+.main {
+  width: 83%;
+  background: #ededed;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.db-title {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.container {
+  width: 870px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.box {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.boxTitle {
+  margin-bottom: 10px;
+}
+.thumbnail {
+  width: 100%;
+  border-radius: 3px;
+}
+.performance {
+  color: #555;
+  margin: 10px 0;
+  line-height: 20px;
+  font-size: 14px;
+}
+.detailContainer {
+  margin-bottom: 20px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.details small,
+.details p {
+  margin: 5px 0;
+}
+.link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+}
+.comment {
+  margin-top: 7px;
+}
+
+/* Second column */
+.boxText {
+  margin: 10px 0;
+}
+
+/* Third column */
+.subscribeText {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.subscribeCount {
+  font-size: 27px;
+  margin: 4px 0;
+}
+.summaryText {
+  font-size: 14px;
+}
+.fa-arrow-up {
+  margin-right: 3px;
+}
+.topVideoLists {
+  font-size: 13px;
+}
+
+/*  */
+.commentBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cp {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.cps {
+  display: flex;
+  align-items: center;
+}
+.cpn {
+  color: #555;
+  font-size: 11px;
+  vertical-align: middle;
+  line-height: 34px;
+}
+.cpt {
+  margin-left: 3px;
+}
+.commentMsg {
+  font-size: 11px;
+  font-weight: 500;
+}
+.cimg {
+  height: 30px;
+  width: 50px;
+}
+.newsText {
+  margin-top: 20px;
+  color: #555;
+  font-size: 12px;
+}
+.subscribers {
+  display: flex;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.sstxt {
+  font-size: 12px;
+}
+.ssdiv {
+  margin-left: 5px;
+}
+.subImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
